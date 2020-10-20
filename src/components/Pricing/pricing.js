@@ -80,6 +80,7 @@ class Pricing extends Component {
                 subtitle="Pricing"
                 title="Choose your Plan"
                 desc="It will be as simple as occidental in fact, it will be Occidental."
+                light="True"
             />
                 
 

@@ -30,7 +30,7 @@ class Footer extends Component {
                 <Row>
                     <Col lg={4} sm={6} >
                         <div>
-                            <h5 className="mb-4 footer-list-title">About the Invoza</h5>
+                            <h5 className="mb-4 footer-list-title"></h5>
                             <p>The Invoza is a sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem eaque </p>
                         </div>
                     </Col>

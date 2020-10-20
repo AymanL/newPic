@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faCheckSquare, faCoffee, faGamepad, faChessKnight, faUserGraduate, faBed, faBeer, faPaw, faBrain, faArrowRight, faCheck} from '@fortawesome/free-solid-svg-icons';
 
 
 // Import Scss
@@ -16,7 +16,7 @@ import "./theme.scss";
 
 //Import Icon Css
 import "./assets/css/materialdesignicons.min.css";
-library.add(fab, faCheckSquare, faCoffee)
+library.add(fab, faCheckSquare, faCoffee, faGamepad, faChessKnight, faUserGraduate, faBed, faBeer, faPaw, faBrain, faArrowRight, faCheck)
 
 class App extends Component {
   constructor(props) {

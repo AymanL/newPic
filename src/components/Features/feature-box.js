@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { Row, Col } from "reactstrap";
-import FontAwesomeIcon from 'feather-icons-react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 class FeatureBox extends Component {
     render() {

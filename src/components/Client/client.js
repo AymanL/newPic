@@ -48,12 +48,13 @@ class Clients extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="section bg-light" id="clients">
+                {/* <section className="section bg-light" id="clients">
                     <Container>
                         <SectionTitle
                             subtitle="Testimonial"
                             title="What our Client Say"
                             desc="It will be as simple as occidental in fact, it will be Occidental."
+                            light="False"
                         />
 
                         <Row>
@@ -89,20 +90,26 @@ class Clients extends Component {
 
                     </Container>
 
-                </section>
+                </section> */}
 
-                <section className="section bg-primary">
+                <section className="section bg-primary" id="clients">
                     <Container>
                         <Row className="justify-content-center mb-5">
                             <Col lg={7}>
                                 <div className="text-center text-white-50">
-                                    <h4 className="text-white">Best Solutions for your Business</h4>
-                                    <p>To achieve this, it would be necessary to have uniform grammar, pronunciation and more common that of the individual languages.</p>
+                                    <h4 className="text-white">L'Asso du Pic</h4>
+                                    <p>Le Pic'Asso est un foyer majoritairement auto-géré par les étudiants qui le fréquentent. C'est la responsabilité de tout un chacun de bien s'en occuper et d'en prendre soin. 
+                                        Néanmoins, il y a quand même tout les semestres une équipe de 20 qui s'en occupe particulièrement bien.
+                                    </p>
                                 </div>
                             </Col>
                         </Row>
 
                         <Counter />
+
+                        <Row>
+                            <h4 className="text-white"> Les différents rôles</h4>
+                        </Row>
                     </Container>
 
                 </section>

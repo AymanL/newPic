@@ -28,7 +28,7 @@ body {
     font-size: $font-size-base;
     color: $body-color;
     font-family: $font-family-primary;
-    background-color: #0066cc;
+    background-color: $body;
 }
 
 h1,
@@ -36,8 +36,9 @@ h2,
 h3,
 h4,
 h6 {
-    color: $light;
+    color: $success;
     font-family: $font-family-secondary;
+
 }
 
 h1{
@@ -45,7 +46,7 @@ h1{
 }
 
 h5 {
-    color: $dark;
+    color: $warning;
     font-family: $font-family-secondary;
 }
 
@@ -61,6 +62,9 @@ h3{
     font-size: x-large;
 }
 
+// .animTitle{
+//     color: $success;
+// }
 
 a {
     text-decoration: none !important;
@@ -72,15 +76,23 @@ p{
     font-size: 15px;
 }
 
+#features{
+    color: white;
+}
+
 /*******************
     2.Helper
 *******************/
 
 .card{
-    border: none;
-    box-shadow: $box-shadow;
-    border-radius: 7px;
-    margin-bottom: 30px;
+    // border: none !important;
+    // box-shadow: $box-shadow;
+    // border-radius: 50%;
+    // margin-bottom: 30px;
+    // background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=4790f5ff&noise=626262&density=51&opacity=21');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
 }
 
 .section{
@@ -266,7 +278,7 @@ $value in $colors {
         .nav-item{
             .nav-link{
                 line-height: 26px;
-                color: rgba($dark, 0.8);
+                color: rgba($light, 0.8);
                 transition: all 0.4s;
                 background-color: transparent !important;
                 padding: 6px 10px;
@@ -277,7 +289,7 @@ $value in $colors {
             }
             &.active {
                 .nav-link{
-                    color: $primary;
+                    color: $success;
                 }
             }
         }
@@ -355,7 +367,7 @@ $value in $colors {
     &.navbar-custom {
         margin-top: 0px;
         padding: 10px 0px;
-        background-color: $white;
+        background-color: $success;
         box-shadow: 0 10px 33px -14px rgba(0,0,0,.1);
         .logo{
             .logo-light {
@@ -369,16 +381,31 @@ $value in $colors {
         .navbar-nav{
             .nav-item{
                 .nav-link{
-                    color: rgba($dark, 0.9);
+                    color: rgba($white, 0.9);
                     &:hover, &:active{
-                        color: $primary
+                        color: $warning;
                     }
                 }
                 &.active {
                     .nav-link{
-                        color: $primary;
+                        color: $warning;
                     }
                 }
+            }
+        }
+
+        .navbar-btn{
+            margin-left: 10px;
+            color: $white;
+            background: rgba($warning, 0.4);
+            border-color: transparent;
+            box-shadow: none;
+    
+            &:hover{
+                color: $white;
+                box-shadow: 0px 16px 31px -16px $success;
+                background: darken($warning, 4%);
+                border-color: darken($success, 4%);
             }
         }
     }
@@ -655,7 +682,7 @@ $value in $colors {
                 }
                 &.active {
                     .nav-link{
-                        color: $primary;
+                        color: $success;
                     }
                 }
             }

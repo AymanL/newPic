@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
-import { Col } from "reactstrap";
+import { Col, Button } from "reactstrap";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 class ServiceBox extends Component {
     render() {
+        const renderSeeMoreButton = (text)=>{
+            if(text){
+              return <Button color="success" className="btn-rounded navbar-btn">{text}</Button>
+            } else{
+              return null
+            }
+          }
+
+
         return (
             <React.Fragment>
                 {
@@ -19,6 +28,8 @@ class ServiceBox extends Component {
                             </div>
                             <h5 className="font-18">{service.title}</h5>
                             <p className="mb-0">{service.desc}</p>
+                            <br/>
+                            {renderSeeMoreButton(service.button)}
                         </div>
                     </Col>
                     )

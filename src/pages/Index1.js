@@ -5,8 +5,8 @@ import Section from './section';
 import Service from "../components/Service/service";
 import Features from "../components/Features/feature";
 import Clients from '../components/Client/client';
-import Pricing from "../components/Pricing/pricing";
-import Subscribe from "../components/Subscribe/Subscribe";
+// import Pricing from "../components/Pricing/pricing";
+// import Subscribe from "../components/Subscribe/Subscribe";
 import Footer from "../components/Footer/footer";
 
 class Index1 extends Component {
@@ -15,10 +15,10 @@ class Index1 extends Component {
         this.state = {
             navItems: [
                 { id: 1, idnm: "home", navheading: "Accueil" },
-                { id: 2, idnm: "services", navheading: "Calendrier" },
-                { id: 3, idnm: "features", navheading: "Sondages" },
+                { id: 2, idnm: "services", navheading: "Activité permanentes" },
+                { id: 3, idnm: "features", navheading: "Évènements" },
                 { id: 4, idnm: "clients", navheading: "Tarifs" },
-                { id: 6, idnm: "pricing", navheading: "Plans" }
+                // { id: 6, idnm: "pricing", navheading: "Plans" }
             ],
             pos: document.documentElement.scrollTop,
             imglight: true,
@@ -60,14 +60,14 @@ class Index1 extends Component {
                 {/* Importing Features */}
                 <Features />
 
+                {/* Importing Pricing */}
+                {/* <Pricing /> */}
+
                 {/* Importing Clients */}
                 <Clients />
 
-                {/* Importing Pricing */}
-                <Pricing />
-
                 {/* Importing Sunscribe */}
-                <Subscribe />
+                {/* <Subscribe /> */}
 
                 {/* Importing Footer */}
                 <Footer />

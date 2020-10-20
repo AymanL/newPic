@@ -64,7 +64,7 @@ class NavbarPage extends Component {
                                         </NavItem>
                                     ))}
                                 </Nav>
-                                <Button color="success" className="btn-rounded navbar-btn">Try for Free</Button>
+                                <Button color="success" className="btn-rounded navbar-btn">En savoir plus</Button>
                             </ScrollspyNav>
                         </Collapse>
                     </Container>

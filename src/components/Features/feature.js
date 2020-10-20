@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Card, CardBody, CardHeader } from "reactstrap";
+import { Link } from "react-router-dom";
 
 //Import Section Title
 import SectionTitle from "../common/section-title";
@@ -7,7 +8,7 @@ import FeatureBox from "./feature-box";
 
 //Import Images
 import feature1 from "../../assets/images/features/img-1.png";
-import feature2 from "../../assets/images/features/img-2.png";
+import feature2 from "../../assets/images/features/img-3.png";
 
 
 class Features extends Component {
@@ -15,12 +16,12 @@ class Features extends Component {
         super(props);
         this.state = {
             smallFeatures1 : [
-                { title : "Donec quam felis" },
-                { title : "Ultricies nec" },
+                { title : "13 novembre" },
+                { title : "0€" },
             ],
             smallFeatures2 : [
-                { title : "Donec quam felis" },
-                { title : "Ultricies nec" },
+                { title : "20 novembre" },
+                { title : "0€" },
             ]
         }
     }
@@ -38,52 +39,39 @@ class Features extends Component {
                 <Row>
                     <Col lg={5}>
                         <div>
-                            <FeatureBox icon="bar-chart-2" title="Lavage de chien" smallFeatures={this.state.smallFeatures1} desc="Les cousins de Guillermin reviennent du bled, et ils ont apporté la masse de boue sur leurs pattes." link="#" />
+                            <FeatureBox icon="paw" title="Lavage de chien" smallFeatures={this.state.smallFeatures1} desc="Les cousins de Guillermin reviennent du bled, et ils ont apporté la masse de boue sur leurs pattes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lacinia turpis. Mauris facilisis lectus orci, eu pellentesque elit faucibus sit amet. Quisque dapibus nunc et ultrices feugiat. Nulla eget ante at lorem tristique molestie eu eu libero." link="#" />
                         </div>
                     </Col>
 
                     <Col lg={5} sm={8} className="ml-lg-auto">
-                        <Card className="border border-light shadow-none mt-5 mt-lg-0">
-                            <CardHeader className="border-0 bg-transparent">
-                                <div>
-                                    <i className="mdi mdi-circle text-danger mr-1"></i>
-                                    <i className="mdi mdi-circle text-warning mr-1 ml-1"></i>
-                                    <i className="mdi mdi-circle text-success mr-1 ml-1"></i>
-                                </div>
-                            </CardHeader>
-                            <CardBody className="bg-light">
                                 <div className="box-shadow">
                                     <img src={feature1} alt="" className="img-fluid mx-auto d-block"/>
                                 </div>
-                            </CardBody>
-                        </Card>
                     </Col>
                 </Row>
                 
 
                 <Row className="mt-5 pt-5">
                     <Col lg={5} sm={8}>
-                        <Card className="border border-light shadow-none">
-                            <CardHeader className=" border-0 bg-transparent">
-                                <div>
-                                    <i className="mdi mdi-circle text-danger mr-1"></i>
-                                    <i className="mdi mdi-circle text-warning mr-1 ml-1"></i>
-                                    <i className="mdi mdi-circle text-success mr-1 ml-1"></i>
-                                </div>
-                            </CardHeader>
-                            <CardBody className="bg-light">
                                 <div className="box-shadow">
                                     <img src={feature2} alt="" className="img-fluid mx-auto d-block"/>
                                 </div>
-                            </CardBody>
-                        </Card>
                     </Col>
                     <Col lg={5} className="ml-lg-auto">
                         <div className="mt-4 mt-lg-0">
-                        <FeatureBox icon="pie-chart" title="Increase your Marketing Performance" smallFeatures={this.state.smallFeatures2} desc="If several languages coalesce, the grammar of the resulting language is more simple and regular." link="#" />
+                        <FeatureBox icon="brain" title="Révisiathon" smallFeatures={this.state.smallFeatures2} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lacinia turpis. Mauris facilisis lectus orci, eu pellentesque elit faucibus sit amet. Quisque dapibus nunc et ultrices feugiat. Nulla eget ante at lorem tristique molestie eu eu libero." link="#" />
                         </div>
                     </Col>
 
+                </Row>
+
+                <br/>
+                <Row className="mt-4">
+                    <Col lg={12}>
+                        <div className="text-center">
+                            <Link to="#" className="btn btn-success">Voir le calendrier des perms</Link>
+                        </div>
+                    </Col>
                 </Row>
                 
             </Container>
